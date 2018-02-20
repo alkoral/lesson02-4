@@ -8,9 +8,7 @@ include(__DIR__ . '/header.php');
 
     $errors = [];
     if (!empty($_POST)) {
-            $_SESSION['guest'] = $_POST['login'];
-/*    		$guest = $_POST['login'];
-    		$_SESSION['guest'] = $guest;*/
+        $_SESSION['guest'] = $_POST['login'];
         $fileData = file_get_contents(__DIR__ . '/users.json');
         $users = json_decode($fileData, true);
         foreach ($users as $user) {
