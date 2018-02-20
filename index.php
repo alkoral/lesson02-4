@@ -25,7 +25,9 @@ include(__DIR__ . '/header.php');
 <article>
 <section>
   <h1>Авторизоваться</h1>
-
+<center>
+    (если вы не авторизованы, вместо логина введите свое имя)<br><br>
+</center>
 <form method="post" action="">
 	<input type='text' name='login' placeholder='Логин'> Имя &nbsp; 
 	<input type='password' name='password' placeholder='Пароль'> Имя &nbsp; 
