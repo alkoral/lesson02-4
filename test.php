@@ -1,5 +1,9 @@
 <?php
 session_start(); 
+if (empty($_SESSION['guest'])) {
+  $_SESSION['guest'] = "Незнакомец";
+}
+
 if(empty($_SESSION['user'])) {
 $add_login = "\"index.php\">Авторизоваться";
 }
@@ -99,6 +103,7 @@ $_SESSION['quest'] = $question;
 if ($res == $right) {
   echo "<img src='diploma.php'>";
 }
+
 ?>
 
 </center>
