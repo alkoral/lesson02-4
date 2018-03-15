@@ -1,9 +1,9 @@
 <?php
 session_start(); 
-if (empty($_SESSION['guest'])) {
+/*if (empty($_SESSION['guest'])) {
   $_SESSION['guest'] = "Незнакомец";
 }
-
+*/
 if(empty($_SESSION['user'])) {
 $add_login = "\"index.php\">Авторизоваться";
 }
@@ -47,7 +47,7 @@ if (is_array($right)) {
 }
 
 if (empty($_POST['ans'])) {
-  $result = "Перед нажатием кнопки представьтесь и выберите правильный вариант ответа";
+  $result = "Перед нажатием кнопки выберите правильный вариант ответа";
 }
   elseif (!is_array($_POST['ans'])) {
     $res = ($_POST['ans']);
@@ -103,8 +103,6 @@ $_SESSION['quest'] = $question;
 if ($res == $right) {
   echo "<img src='diploma.php'>";
 }
-
 ?>
-
 </center>
 <?php echo $footer; ?>

@@ -43,6 +43,16 @@ legend {
 	color: #2E2EFE;
 }
 
+form a {
+	text-decoration: none;
+	color: black;
+}
+
+form a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
 nav {
 	padding: 5px;
 	background-color: #2E2EFE;
